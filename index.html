@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section  data-background-transition="slide" data-background="img/background.svg">
+				<img class="img_n" src="img\R_logo.svg.png" width="200px"></img>
+				<h2 class="fragment">programming language</h2>
+				<p class="fragment" ><font size="8">Introduction</p></font>
+			</section>
+					<section>
+					<h2>What is R?</h2>
+					<p class="fragment">R is a language and environment for statistical computing and graphics.</p>
+					</section>
+					<section>
+							<section>
+								<img class="img_n" src="img\Rstudio.png" width="500px"></img>
+							</section>
+							<section>
+								RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+							</section>
+					</section>
+					<section>
+						<section>
+							<h1>Your first code</h1>
+						</section>
+						<section>
+							<h2>Hello World in R</h2>
+							<pre><code class="r" data-trim contenteditable>
+								> myString <- "Hello, World!"
+								> print(myString)
+								[1] "Hello, World!"
+							</code></pre>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>R Data Types</h1>
+						</section>
+						<section>
+							<h2>Logical</h2>
+							<h3>TRUE/FALSE</h3>
+							<pre><code class="r" data-trim contenteditable>
+								v <- TRUE
+								print(class(v))
+								[1] "logical"
+							</code></pre>
+						</section>
+						<section>
+							<h2>Numeric</h2>
+							<h3>12.3, 5, 999</h3>
+							<pre><code class="r" data-trim contenteditable>
+								v <- 23.5
+								print(class(v))
+								[1] "numeric"
+							</code></pre>
+						</section>
+						<section>
+							<h2>Integer</h2>
+							<h3>2L, 34L, 0L</h3>
+							<pre><code class="r" data-trim contenteditable>
+								v <- 2L
+								print(class(v))
+								[1] "integer"
+							</code></pre>
+						</section>
+						<section>
+							<h2>Complex</h2>
+							<h3>3 + 2i</h3>
+							<pre><code class="r" data-trim contenteditable>
+								v <- 2+5i
+								print(class(v))
+								[1] "complex"
+							</code></pre>
+						</section>
+						<section>
+							<h2>Character</h2>
+							<h3>'a' , '"good", "TRUE", '23.4'</h3>
+							<pre><code class="r" data-trim contenteditable>
+								v <- "cat"
+								print(class(v))
+								[1] "character"
+							</code></pre>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>Vectors</h1>
+						</section>
+						<section>
+							<pre><code class="r" data-trim contenteditable>
+								# Create a vector.
+								apple <- c('red','green',"yellow")
+								print(apple)
+
+								# Get the class of the vector.
+								print(class(apple))
+
+								# Create a vector with numbers.
+								numbers <- c(1,4,7,8,57,3)
+								print(numbers)
+							</code></pre>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>Lists</h1>
+						</section>
+						<section>
+							<pre><code class="r" data-trim contenteditable>
+								# Create a list.
+								list1 <- list(c(2,5,3),21.3,sin)
+
+								# Print the list.
+								print(list1)
+							</code></pre>
+						</section>
+					</section>
+					<section>
+						<section>
+							<h1>Operators</h1>
+						</section>
+						<section>
+							<table>
+								<tr>
+									<h3>Arithmetic Operators</h3>
+									<th>Operator</th>
+									<th>Description</th>
+								</tr>
+								<tr>
+									<td>+</td>
+									<td>addition</td>
+								</tr>
+								<tr>
+									<td>-</td>
+									<td>subtraction</td>
+								</tr>
+								<tr>
+									<td>*</td>
+									<td>multiplication</td>
+								</tr>
+								<tr>
+									<td>/</td>
+									<td>division</td>
+								</tr>
+								<tr>
+									<td>^ or **</td>
+									<td>exponentiation</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<h3>Arithmetic Operators</h3>
+							<table style="font-size: 70%;">
+								<tr>
+									<th>Operator</th>
+									<th>Description</th>
+								</tr>
+								<tr>
+									<td><</td>
+									<td>less than</td>
+								</tr>
+								<tr>
+									<td><=</td>
+									<td>less than or equal to</td>
+								</tr>
+								<tr>
+									<td>></td>
+									<td>greater than</td>
+								</tr>
+								<tr>
+									<td>>=</td>
+									<td>greater than or equal to</td>
+								</tr>
+								<tr>
+									<td>==</td>
+									<td>exactly equal to</td>
+								</tr>
+								<tr>
+									<td>!=</td>
+									<td>not equal to</td>
+								</tr>
+								<tr>
+									<td>!x</td>
+									<td>Not x</td>
+								</tr>
+								<tr>
+									<td>x | y</td>
+									<td>x OR y</td>
+								</tr>
+								<tr>
+									<td>x & y</td>
+									<td>x AND y</td>
+								</tr>
+								<tr>
+									<td>isTRUE(x)</td>
+									<td>test if X is TRUE</td>
+								</tr>
+							</table>
+						</section>
+						<section>
+							<section>
+								<pre><code class="r" data-trim contenteditable>
+									# examples
+									2+3
+
+									8-5
+
+									3*6
+
+									7/2
+
+									8**2
+
+									3 > 4
+
+									x <- c(1:10)
+									x[(x>8) | (x<5)]
+									# less than 5 OR less bigger than 8
+									# result: 1 2 3 4 9 10
+								</code></pre>
+							</section>
+						</section>
+					</section>
+					<section>
+						<section>
+						<table>
+							<tr>
+								<h3>Functions</h3>
+								<th>Function</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>sum(x)</td>
+								<td>sum</td>
+							</tr>
+							<tr>
+								<td>max(x)</td>
+								<td>maximum</td>
+							</tr>
+							<tr>
+								<td>min(x)</td>
+								<td>minimum</td>
+							</tr>
+							<tr>
+								<td>mean(x)</td>
+								<td>mean</td>
+							</tr>
+							<tr>
+								<td>median(x)</td>
+								<td>median</td>
+							</tr>
+							<tr>
+								<td>sd(x)</td>
+								<td>standard deviation of object(x)</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<h3>Other Useful Functions</h3>
+								<th>function</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>seq(from , to, by)</td>
+								<td>seq(1,10,2)</td>
+							</tr>
+							<tr>
+								<td>rep(x, ntimes)</td>
+								<td>rep(1:3, 2)
+								</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<pre><code class="r" data-trim contenteditable>
+							sum(1,6,9)
+							# 16
+
+							mean(3,5,8)
+							#3
+
+							median(1:10)
+							#5.5
+
+							indices <- seq(1,10,2)
+							#indices is c(1, 3, 5, 7, 9)
+
+							y <- rep(1:3, 2)
+							# y is c(1, 2, 3, 1, 2, 3)
+						</code></pre>
+					</section>
+					</section>
+					<section>
+						<section>
+							<h1>Data manipulation</h1>
+						</section>
+						<section>
+							<pre><code class="r" data-trim contenteditable>
+								mtcars <- mtcars
+								#display
+								head(mtcars)
+								#select first row
+								mtcars[1,]
+								#select first 10 rows
+								mtcars[1:10,]
+								#select first column
+								mtcars[,1]
+								#select first three column
+								mtcars[,1:3]
+							</code></pre>
+						</section>
+					</section>
+					<section data-background-transition="zoom">
+						<section data-background="white">
+							<img class="img_n" src="img\plotly.png" width="300px"></img>
+						</section>
+						<section>
+							<h3>Basic Bar Chart</h3>
+							<pre><code class="r" data-trim contenteditable>
+								library(plotly)
+								library(magrittr)
+
+								p <- plot_ly(
+								  x = c("giraffes", "orangutans", "monkeys"),
+								  y = c(20, 14, 23),
+								  name = "SF Zoo",
+								  type = "bar"
+								)
+								p
+							</code></pre>
+						</section>
+						<section>
+							<h3>Grouped Bar Chart</h3>
+							<pre><code class="r" data-trim contenteditable>
+								Animals <- c("giraffes", "orangutans", "monkeys")
+								SF_Zoo <- c(20, 14, 23)
+								LA_Zoo <- c(12, 18, 29)
+								data <- data.frame(Animals, SF_Zoo, LA_Zoo)
+
+								p <- plot_ly(data, x = ~Animals, y = ~SF_Zoo, type = 'bar', name = 'SF Zoo') %>%
+								  add_trace(y = ~LA_Zoo, name = 'LA Zoo') %>%
+								  layout(yaxis = list(title = 'Count'), barmode = 'group')
+							</code></pre>
+						</section>
+						<section>
+							<h3>Stacked Bar Chart</h3>
+							<pre><code class="r" data-trim contenteditable>
+								Animals <- c("giraffes", "orangutans", "monkeys")
+								SF_Zoo <- c(20, 14, 23)
+								LA_Zoo <- c(12, 18, 29)
+								data <- data.frame(Animals, SF_Zoo, LA_Zoo)
+
+								p <- plot_ly(data, x = ~Animals, y = ~SF_Zoo, type = 'bar', name = 'SF Zoo') %>%
+								  add_trace(y = ~LA_Zoo, name = 'LA Zoo') %>%
+								  layout(yaxis = list(title = 'Count'), barmode = 'stack')
+							</code></pre>
+						</section>
+						<section>
+							<h3>Basic Pie Chart</h3>
+							<pre><code class="r" data-trim contenteditable>
+								p <- plot_ly(
+								  labels = c("giraffes", "orangutans", "monkeys"),
+								  values = c(20, 14, 23),
+								  type = "pie") %>% layout(title = "SF Zoo",
+								xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+								yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+								p
+							</code></pre>
+						</section>
+					</section>
+				<section>
+						Thank you for attention
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				transition: 'convex',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
