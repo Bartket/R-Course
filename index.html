@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/animations.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -21,29 +22,18 @@
 		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
-	<style type="text/css">
-	#hi-there * {
-		fill-opacity: 0;
-		transition: fill-opacity 1s;
-	}
-
-	#hi-there.finished * {
-		fill-opacity: 1;
-		stroke-width: 0;
-	}
-	body.finished * {
-		background-color: lightblue;
-	}
-</style>
 </head>
-
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<section>
-
+				<div class="loader">
+				  <svg class="circular" viewBox="25 25 50 50">
+				    <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+				  </svg>
+				</div>
 			</section>
-			<section>
+			<section data-background-transition="slide" data-transition="linear">
 				<div class="bloc bloc-head">
 					<svg id="hi-there" width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
 					    <g transform="matrix(1,0,0,1,5.3599,115.851)">
@@ -441,8 +431,8 @@
 					<h1>Thank you for attention!</h1>
 				</section>
 			</section>
-			<section>
-				<section data-background-transition="slide" data-transition="linear">
+			<section data-background-transition="slide" data-transition="linear">
+				<section>
 					<img class="img_n" src="img\python.svg.png" width="200px"></img>
 					<h1>PYTHON</h1>
 					<h2>programming language</h2>
