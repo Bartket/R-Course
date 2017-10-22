@@ -1,115 +1,168 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Technical Campus 5th Edition</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section  data-background-transition="slide" data-background="img/background.svg">
-				<img class="img_n" src="img\R_logo.svg.png" width="200px"></img>
-				<h2 class="fragment">programming language</h2>
-				<p class="fragment" ><font size="8">Introduction</p></font>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	<style type="text/css">
+	#hi-there * {
+		fill-opacity: 0;
+		transition: fill-opacity 1s;
+	}
+
+	#hi-there.finished * {
+		fill-opacity: 1;
+		stroke-width: 0;
+	}
+	body.finished * {
+		background-color: lightblue;
+	}
+</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+
 			</section>
-					<section>
+			<section>
+				<div class="bloc bloc-head">
+					<svg id="hi-there" width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+					    <g transform="matrix(1,0,0,1,5.3599,115.851)">
+					        <path d="M303.535,338.181L332.191,338.181L332.191,321.639L257.617,321.639L257.617,338.181L286.273,338.181L286.273,422.421L303.535,422.421L303.535,338.181Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M350.209,422.421L419.023,422.421L419.023,406.167L367.471,406.167L367.471,378.501L397.279,378.501L397.279,362.247L367.471,362.247L367.471,337.893L415.855,337.893L415.855,321.639L350.209,321.639L350.209,422.421Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M473.455,424.149C491.455,424.149 502.543,414.512 508.735,400.55L492.751,394.5C488.143,402.134 482.527,407.463 473.455,407.463C456.463,407.463 449.119,388.739 449.119,372.03C449.119,356.186 454.879,336.453 473.455,336.453C482.959,336.453 487.999,340.774 493.039,348.408L508.591,341.35C504.271,330.7 492.607,319.911 473.455,319.911C442.358,319.911 431.281,348.84 431.281,372.03C431.281,396.949 442.07,424.149 473.455,424.149Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M589.105,422.421L606.223,422.421L606.223,321.639L589.105,321.639L589.105,362.391L545.023,362.391L545.023,321.639L527.761,321.639L527.761,422.421L545.023,422.421L545.023,378.645L589.105,378.645L589.105,422.421Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M709.039,422.421L709.039,321.639L691.921,321.639L691.921,384.268C691.921,386.428 692.065,389.307 692.353,391.899C691.057,389.307 689.616,386.428 688.176,384.268L647.408,321.639L630.721,321.639L630.721,422.421L647.839,422.421L647.839,358.785C647.839,356.481 647.695,353.602 647.408,351.298C648.703,353.89 650.288,356.769 651.585,358.785L693.36,422.421L709.039,422.421Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <rect x="734.257" y="321.639" width="17.262" height="100.782" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M815.311,424.149C833.311,424.149 844.399,414.512 850.591,400.55L834.607,394.5C829.999,402.134 824.383,407.463 815.311,407.463C798.319,407.463 790.975,388.739 790.975,372.03C790.975,356.186 796.735,336.453 815.311,336.453C824.815,336.453 829.855,340.774 834.895,348.408L850.447,341.35C846.127,330.7 834.463,319.911 815.311,319.911C784.214,319.911 773.137,348.84 773.137,372.03C773.137,396.949 783.926,424.149 815.311,424.149Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M934.114,422.421L952.255,422.421L914.822,321.639L897.69,321.639L860.113,422.421L878.397,422.421L886.316,400.389L926.196,400.389L934.114,422.421ZM920.725,384.855L891.787,384.855L903.017,354.615C904.024,351.735 905.464,347.415 906.328,344.391C907.048,347.415 908.488,351.735 909.639,354.615L920.725,384.855Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M967.681,422.421L1033.9,422.421L1033.9,405.879L984.943,405.879L984.943,321.639L967.681,321.639L967.681,422.421Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1122.89,424.149C1140.89,424.149 1151.98,414.512 1158.17,400.55L1142.19,394.5C1137.58,402.134 1131.97,407.463 1122.89,407.463C1105.9,407.463 1098.56,388.739 1098.56,372.03C1098.56,356.186 1104.32,336.453 1122.89,336.453C1132.4,336.453 1137.44,340.774 1142.48,348.408L1158.03,341.35C1153.71,330.7 1142.05,319.911 1122.89,319.911C1091.8,319.911 1080.72,348.84 1080.72,372.03C1080.72,396.949 1091.51,424.149 1122.89,424.149Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1241.7,422.421L1259.84,422.421L1222.41,321.639L1205.27,321.639L1167.7,422.421L1185.98,422.421L1193.9,400.389L1233.78,400.389L1241.7,422.421ZM1228.31,384.855L1199.37,384.855L1210.6,354.615C1211.61,351.735 1213.05,347.415 1213.91,344.391C1214.63,347.415 1216.07,351.735 1217.22,354.615L1228.31,384.855Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1366.98,422.421L1366.98,321.639L1350.14,321.639L1324.07,380.813C1323.07,383.261 1322.06,385.996 1321.34,388.3C1320.62,385.996 1319.61,383.261 1318.6,380.813L1292.67,321.639L1275.27,321.639L1275.27,422.421L1292.53,422.421L1292.53,368.863C1292.53,365.264 1292.24,359.505 1291.95,356.769C1293.25,360.657 1295.12,365.408 1296.7,368.863L1321.19,424.149L1345.68,369.151C1347.12,365.552 1348.99,360.657 1350.29,356.77C1350,359.505 1349.71,365.264 1349.71,368.864L1349.71,422.421L1366.98,422.421Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1391.47,422.421L1408.74,422.421L1408.74,384.261L1433.37,384.261C1457.56,384.261 1467.2,367.287 1467.2,352.878C1467.2,337.462 1458.42,321.639 1433.37,321.639L1391.47,321.639L1391.47,422.421ZM1434.23,367.863L1408.74,367.863L1408.74,338.037L1434.23,338.037C1446.05,338.037 1449.36,346.538 1449.36,352.878C1449.36,359.939 1445.33,367.863 1434.23,367.863Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1520.92,424.149C1542.24,424.149 1560.22,413.793 1560.22,383.991L1560.22,321.639L1542.96,321.639L1542.96,383.991C1542.96,402.423 1533.89,407.607 1520.92,407.607C1507.81,407.607 1498.88,402.423 1498.88,383.991L1498.88,321.639L1481.62,321.639L1481.62,383.991C1481.62,414.224 1500.18,424.149 1520.92,424.149Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					        <path d="M1616.25,424.149C1636.13,424.149 1651.66,413.217 1651.66,393.78C1651.66,372.462 1633.54,366.125 1618.84,360.939C1608.32,357.482 1599.54,354.458 1599.54,347.112C1599.54,340.198 1604.87,336.309 1613.94,336.309C1623.45,336.309 1629.21,340.774 1631.81,346.68L1647.35,341.494C1643.75,329.117 1632.67,319.911 1615.1,319.911C1593.92,319.911 1581.99,332.282 1581.99,346.968C1581.99,366.125 1598.1,371.742 1612.5,376.639C1623.88,380.528 1634.11,384.129 1634.11,393.78C1634.11,402.998 1627.2,407.751 1616.82,407.751C1606.45,407.751 1598.38,401.414 1594.21,392.195L1578.24,398.101C1583.71,414.08 1597.66,424.149 1616.25,424.149Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:5px;"/>
+					    </g>
+							<g transform="matrix(1,0,0,1,190.489,31.443)">
+									<path d="M520.157,639.576C535.012,639.576 545.849,630.371 545.849,615.87C545.849,604.345 538.752,593.988 524.278,593.988C519.582,593.988 515.749,595.235 512.969,596.865L514.024,582.264L541.629,582.264L541.629,571.236L503.38,571.236L501.365,604.729L512.777,609.531C515.461,606.649 518.72,604.92 523.32,604.92C530.028,604.92 534.245,608.858 534.245,615.966C534.245,623.65 528.59,628.644 520.157,628.644C513.161,628.644 509.133,626.339 505.969,624.226L499.445,633.247C502.996,636.22 509.613,639.576 520.157,639.576Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M573.401,639.576C577.433,639.576 580.889,638.809 583.673,637.371L585.017,627.3C582.425,628.74 579.833,629.508 577.337,629.508C574.361,629.508 573.209,627.588 573.209,624.803L573.209,599.16L584.537,599.16L584.537,589.38L573.209,589.38L573.209,569.124L561.989,574.5L561.989,589.38L554.693,589.38L554.693,599.16L561.989,599.16L561.989,627.011C561.989,634.782 565.345,639.576 573.401,639.576Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M596.069,638.424L607.289,638.424L607.289,609.912C607.289,601.848 611.515,598.872 617.279,598.872C622.851,598.872 626.405,602.136 626.405,610.104L626.405,638.424L637.625,638.424L637.625,608.28C637.625,593.311 629.569,588.228 620.257,588.228C614.685,588.228 610.459,590.146 607.289,593.982L607.289,569.124L596.069,574.308L596.069,638.424Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M676.037,638.424L721.913,638.424L721.913,627.588L687.545,627.588L687.545,609.144L707.417,609.144L707.417,598.308L687.545,598.308L687.545,582.072L719.801,582.072L719.801,571.236L676.037,571.236L676.037,638.424Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M734.885,571.236L734.885,638.424L755.228,638.424C779.905,638.424 787.961,620.194 787.961,604.83C787.961,588.122 779.138,571.236 755.613,571.236L734.885,571.236ZM756.861,627.588L746.393,627.588L746.393,582.072L757.918,582.072C770.691,582.072 776.069,593.5 776.069,604.83C776.069,615.393 771.171,627.588 756.861,627.588Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<rect x="802.373" y="571.236" width="11.508" height="67.188" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M856.985,582.264L876.089,582.264L876.089,571.236L826.373,571.236L826.373,582.264L845.477,582.264L845.477,638.424L856.985,638.424L856.985,582.264Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<rect x="888.581" y="571.236" width="11.508" height="67.188" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M943.967,639.576C965.665,639.576 973.433,621.443 973.433,604.83C973.433,588.218 965.665,570.084 943.967,570.084C922.365,570.084 914.501,588.218 914.501,604.83C914.501,621.443 922.365,639.576 943.967,639.576ZM943.967,628.548C930.906,628.548 926.393,615.777 926.393,604.83C926.393,594.46 930.906,581.112 943.967,581.112C957.027,581.112 961.541,593.787 961.541,604.83C961.541,615.105 956.931,628.548 943.967,628.548Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+									<path d="M1039.58,638.424L1039.58,571.236L1028.16,571.236L1028.16,612.989C1028.16,614.429 1028.26,616.348 1028.45,618.076C1027.59,616.348 1026.63,614.429 1025.67,612.989L998.489,571.236L987.365,571.236L987.365,638.424L998.777,638.424L998.777,596C998.777,594.464 998.681,592.545 998.489,591.009C999.353,592.737 1000.41,594.656 1001.27,596L1029.12,638.424L1039.58,638.424Z" style="fill:#ffd700;stroke:#ffd700;stroke-width:4px;"/>
+							</g>
+					</svg>
+				</div>
+			</section>
+			<section data-background-transition="slide" data-transition="linear" data-background-color="white">
+				<img class="img_n" src="img\DMC2.png" width="1000px"></img>
+			</section>
+			<section data-background-transition="slide" data-transition="linear">
+				<section>
+					<img class="img_n" src="img\R_logo.svg.png" width="200px"></img>
+					<h2>programming language</h2>
+					<p class="fragment">
+						<font size="8">Introduction</p>
+					</font>
+				</section>
+				<section>
 					<h2>What is R?</h2>
 					<p class="fragment">R is a language and environment for statistical computing and graphics.</p>
-					</section>
-					<section>
-							<section>
-								<img class="img_n" src="img\Rstudio.png" width="500px"></img>
-							</section>
-							<section>
-								RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
-							</section>
-					</section>
-					<section>
-						<section>
-							<h1>Your first code</h1>
-						</section>
-						<section>
-							<h2>Hello World in R</h2>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<img class="img_n" src="img\Rstudio.png" width="500px"></img>
+				</section>
+				<section>
+					RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management.
+				</section>
+				<section>
+					<h1>Your first code</h1>
+				</section>
+				<section>
+					<h2>Hello World in R</h2>
+					<pre><code class="r" data-trim contenteditable>
 								> myString <- "Hello, World!"
 								> print(myString)
 								[1] "Hello, World!"
 							</code></pre>
-						</section>
-					</section>
-					<section>
-						<section>
-							<h1>R Data Types</h1>
-						</section>
-						<section>
-							<h2>Logical</h2>
-							<h3>TRUE/FALSE</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h1>R Data Types</h1>
+				</section>
+				<section>
+					<h2>Logical</h2>
+					<h3>TRUE/FALSE</h3>
+					<pre><code class="r" data-trim contenteditable>
 								v <- TRUE
 								print(class(v))
 								[1] "logical"
 							</code></pre>
-						</section>
-						<section>
-							<h2>Numeric</h2>
-							<h3>12.3, 5, 999</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h2>Numeric</h2>
+					<h3>12.3, 5, 999</h3>
+					<pre><code class="r" data-trim contenteditable>
 								v <- 23.5
 								print(class(v))
 								[1] "numeric"
 							</code></pre>
-						</section>
-						<section>
-							<h2>Integer</h2>
-							<h3>2L, 34L, 0L</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h2>Integer</h2>
+					<h3>2L, 34L, 0L</h3>
+					<pre><code class="r" data-trim contenteditable>
 								v <- 2L
 								print(class(v))
 								[1] "integer"
 							</code></pre>
-						</section>
-						<section>
-							<h2>Complex</h2>
-							<h3>3 + 2i</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h2>Complex</h2>
+					<h3>3 + 2i</h3>
+					<pre><code class="r" data-trim contenteditable>
 								v <- 2+5i
 								print(class(v))
 								[1] "complex"
 							</code></pre>
-						</section>
-						<section>
-							<h2>Character</h2>
-							<h3>'a' , '"good", "TRUE", '23.4'</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h2>Character</h2>
+					<h3>'a' , '"good", "TRUE", '23.4'</h3>
+					<pre><code class="r" data-trim contenteditable>
 								v <- "cat"
 								print(class(v))
 								[1] "character"
 							</code></pre>
-						</section>
-					</section>
-					<section>
-						<section>
-							<h1>Vectors</h1>
-						</section>
-						<section>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h1>Vectors</h1>
+				</section>
+				<section>
+					<pre><code class="r" data-trim contenteditable>
 								# Create a vector.
 								apple <- c('red','green',"yellow")
 								print(apple)
@@ -121,107 +174,105 @@
 								numbers <- c(1,4,7,8,57,3)
 								print(numbers)
 							</code></pre>
-						</section>
-					</section>
-					<section>
-						<section>
-							<h1>Lists</h1>
-						</section>
-						<section>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h1>Lists</h1>
+				</section>
+				<section>
+					<pre><code class="r" data-trim contenteditable>
 								# Create a list.
 								list1 <- list(c(2,5,3),21.3,sin)
 
 								# Print the list.
 								print(list1)
 							</code></pre>
-						</section>
-					</section>
-					<section>
-						<section>
-							<h1>Operators</h1>
-						</section>
-						<section>
-							<table>
-								<tr>
-									<h3>Arithmetic Operators</h3>
-									<th>Operator</th>
-									<th>Description</th>
-								</tr>
-								<tr>
-									<td>+</td>
-									<td>addition</td>
-								</tr>
-								<tr>
-									<td>-</td>
-									<td>subtraction</td>
-								</tr>
-								<tr>
-									<td>*</td>
-									<td>multiplication</td>
-								</tr>
-								<tr>
-									<td>/</td>
-									<td>division</td>
-								</tr>
-								<tr>
-									<td>^ or **</td>
-									<td>exponentiation</td>
-								</tr>
-							</table>
-						</section>
-						<section>
-							<h3>Logical Operators</h3>
-							<table style="font-size: 70%;">
-								<tr>
-									<th>Operator</th>
-									<th>Description</th>
-								</tr>
-								<tr>
-									<td><</td>
+				</section>
+				<section>
+					<h1>Operators</h1>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<h3>Arithmetic Operators</h3>
+							<th>Operator</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>+</td>
+							<td>addition</td>
+						</tr>
+						<tr>
+							<td>-</td>
+							<td>subtraction</td>
+						</tr>
+						<tr>
+							<td>*</td>
+							<td>multiplication</td>
+						</tr>
+						<tr>
+							<td>/</td>
+							<td>division</td>
+						</tr>
+						<tr>
+							<td>^ or **</td>
+							<td>exponentiation</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h3>Logical Operators</h3>
+					<table style="font-size: 70%;">
+						<tr>
+							<th>Operator</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>
+								<</td>
 									<td>less than</td>
-								</tr>
-								<tr>
-									<td><=</td>
+						</tr>
+						<tr>
+							<td>
+								<=</td>
 									<td>less than or equal to</td>
-								</tr>
-								<tr>
-									<td>></td>
-									<td>greater than</td>
-								</tr>
-								<tr>
-									<td>>=</td>
-									<td>greater than or equal to</td>
-								</tr>
-								<tr>
-									<td>==</td>
-									<td>exactly equal to</td>
-								</tr>
-								<tr>
-									<td>!=</td>
-									<td>not equal to</td>
-								</tr>
-								<tr>
-									<td>!x</td>
-									<td>Not x</td>
-								</tr>
-								<tr>
-									<td>x | y</td>
-									<td>x OR y</td>
-								</tr>
-								<tr>
-									<td>x & y</td>
-									<td>x AND y</td>
-								</tr>
-								<tr>
-									<td>isTRUE(x)</td>
-									<td>test if X is TRUE</td>
-								</tr>
-							</table>
-						</section>
-						<section>
-							<section>
-								<pre><code class="r" data-trim contenteditable>
+						</tr>
+						<tr>
+							<td>></td>
+							<td>greater than</td>
+						</tr>
+						<tr>
+							<td>>=</td>
+							<td>greater than or equal to</td>
+						</tr>
+						<tr>
+							<td>==</td>
+							<td>exactly equal to</td>
+						</tr>
+						<tr>
+							<td>!=</td>
+							<td>not equal to</td>
+						</tr>
+						<tr>
+							<td>!x</td>
+							<td>Not x</td>
+						</tr>
+						<tr>
+							<td>x | y</td>
+							<td>x OR y</td>
+						</tr>
+						<tr>
+							<td>x & y</td>
+							<td>x AND y</td>
+						</tr>
+						<tr>
+							<td>isTRUE(x)</td>
+							<td>test if X is TRUE</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<section>
+						<pre><code class="r" data-trim contenteditable>
 									# examples
 									2+3
 
@@ -240,63 +291,61 @@
 									# less than 5 OR less bigger than 8
 									# result: 1 2 3 4 9 10
 								</code></pre>
-							</section>
-						</section>
 					</section>
-					<section>
-						<section>
-						<table>
-							<tr>
-								<h3>Functions</h3>
-								<th>Function</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td>sum(x)</td>
-								<td>sum</td>
-							</tr>
-							<tr>
-								<td>max(x)</td>
-								<td>maximum</td>
-							</tr>
-							<tr>
-								<td>min(x)</td>
-								<td>minimum</td>
-							</tr>
-							<tr>
-								<td>mean(x)</td>
-								<td>mean</td>
-							</tr>
-							<tr>
-								<td>median(x)</td>
-								<td>median</td>
-							</tr>
-							<tr>
-								<td>sd(x)</td>
-								<td>standard deviation of object(x)</td>
-							</tr>
-						</table>
-					</section>
-					<section>
-						<table>
-							<tr>
-								<h3>Other Useful Functions</h3>
-								<th>function</th>
-								<th>Description</th>
-							</tr>
-							<tr>
-								<td>seq(from , to, by)</td>
-								<td>seq(1,10,2)</td>
-							</tr>
-							<tr>
-								<td>rep(x, ntimes)</td>
-								<td>rep(1:3, 2)
-								</td>
-							</tr>
-						</table>
-					</section>
-					<section>
-						<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<h3>Functions</h3>
+							<th>Function</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>sum(x)</td>
+							<td>sum</td>
+						</tr>
+						<tr>
+							<td>max(x)</td>
+							<td>maximum</td>
+						</tr>
+						<tr>
+							<td>min(x)</td>
+							<td>minimum</td>
+						</tr>
+						<tr>
+							<td>mean(x)</td>
+							<td>mean</td>
+						</tr>
+						<tr>
+							<td>median(x)</td>
+							<td>median</td>
+						</tr>
+						<tr>
+							<td>sd(x)</td>
+							<td>standard deviation of object(x)</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<table>
+						<tr>
+							<h3>Other Useful Functions</h3>
+							<th>function</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>seq(from , to, by)</td>
+							<td>seq(1,10,2)</td>
+						</tr>
+						<tr>
+							<td>rep(x, ntimes)</td>
+							<td>rep(1:3, 2)
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<pre><code class="r" data-trim contenteditable>
 							sum(1,6,9)
 							# 16
 
@@ -312,14 +361,12 @@
 							y <- rep(1:3, 2)
 							# y is c(1, 2, 3, 1, 2, 3)
 						</code></pre>
-					</section>
-					</section>
-					<section>
-						<section>
-							<h1>Data manipulation</h1>
-						</section>
-						<section>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h1>Data manipulation</h1>
+				</section>
+				<section>
+					<pre><code class="r" data-trim contenteditable>
 								mtcars <- mtcars
 								#display
 								head(mtcars)
@@ -332,15 +379,14 @@
 								#select first three column
 								mtcars[,1:3]
 							</code></pre>
-						</section>
-					</section>
-					<section data-background-transition="zoom">
-						<section data-background="white">
-							<img class="img_n" src="img\plotly.png" width="300px"></img>
-						</section>
-						<section>
-							<h3>Basic Bar Chart</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section data-background-transition="zoom">
+					<img class="img_n" src="img\plotly.png" width="300px"></img>
+					<h2>R library</h2>
+				</section>
+				<section>
+					<h3>Basic Bar Chart</h3>
+					<pre><code class="r" data-trim contenteditable>
 								library(plotly)
 								library(magrittr)
 
@@ -352,10 +398,10 @@
 								)
 								p
 							</code></pre>
-						</section>
-						<section>
-							<h3>Grouped Bar Chart</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h3>Grouped Bar Chart</h3>
+					<pre><code class="r" data-trim contenteditable>
 								Animals <- c("giraffes", "orangutans", "monkeys")
 								SF_Zoo <- c(20, 14, 23)
 								LA_Zoo <- c(12, 18, 29)
@@ -365,10 +411,10 @@
 								  add_trace(y = ~LA_Zoo, name = 'LA Zoo') %>%
 								  layout(yaxis = list(title = 'Count'), barmode = 'group')
 							</code></pre>
-						</section>
-						<section>
-							<h3>Stacked Bar Chart</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h3>Stacked Bar Chart</h3>
+					<pre><code class="r" data-trim contenteditable>
 								Animals <- c("giraffes", "orangutans", "monkeys")
 								SF_Zoo <- c(20, 14, 23)
 								LA_Zoo <- c(12, 18, 29)
@@ -378,10 +424,10 @@
 								  add_trace(y = ~LA_Zoo, name = 'LA Zoo') %>%
 								  layout(yaxis = list(title = 'Count'), barmode = 'stack')
 							</code></pre>
-						</section>
-						<section>
-							<h3>Basic Pie Chart</h3>
-							<pre><code class="r" data-trim contenteditable>
+				</section>
+				<section>
+					<h3>Basic Pie Chart</h3>
+					<pre><code class="r" data-trim contenteditable>
 								p <- plot_ly(
 								  labels = c("giraffes", "orangutans", "monkeys"),
 								  values = c(20, 14, 23),
@@ -390,31 +436,103 @@
 								yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 								p
 							</code></pre>
-						</section>
-					</section>
-				<section>
-						Thank you for attention
 				</section>
-			</div>
+				<section data-background-transition="slide" data-transition="linear">
+					<h1>Thank you for attention!</h1>
+				</section>
+			</section>
+			<section>
+				<section data-background-transition="slide" data-transition="linear">
+					<img class="img_n" src="img\python.svg.png" width="200px"></img>
+					<h1>PYTHON</h1>
+					<h2>programming language</h2>
+					<p class="fragment">
+						<font size="8">Introduction</p>
+					</font>
+				</section>
+				<section>
+					The Python programming language is an Open Source, cross-platform, high level, dynamic, interpreted language.
+				</section>
+				<section>
+					<h2>Python 2 vs. Python 3</h2>
+					<img class="img_n" src="img\pythonVS.jpg" width="1000px"></img>
+					<p>Source: https://learntocodewith.me</p>
+				</section>
+				<section data-background-color="white">
+					<h2>Jupyter Notebook</h2>
+					<img class="img_n" src="img\main-logo.svg" width="400px"></img>
+				</section>
+				<section>
+					<h1>your first code</h1>
+				</section>
+				<section>
+					<h3>Hello World!</h3>
+					<pre><code class="python" data-trim contenteditable>
+							print("Hello World")
+					</code></pre>
+				</section>
+			</section>
+			<section data-background-transition="slide" data-transition="linear">
+				<img class="img_n" src="img\power-bi_logo.png" width="800px"></img>
+				<p class="fragment">
+					<font size="8">Introduction</p>
+				</font>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
-				transition: 'convex',
+	<script>
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			history: true,
+			transition: 'convex',
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+	<script src='js/vivus.js'></script>
+	<script src='js/_build.js'></script>
+	<script src='js/pathformer.js'></script>
+	<script>
+		var hi;
+		Reveal.addEventListener('slidechanged', function(event) {
+			if (event.indexh == 1) { //to get the slide number
+				hi = new Vivus('hi-there', {
+					type: 'sync',
+					duration: 200,
+					start: 'autostart',
+					animTimingFunction: Vivus.EASE
+				}, function doDone(obj) {
+					obj.el.classList.add('finished')
+				});
+				hi.reset().play();
+			} else {
+				document.getElementById("hi-there").classList.remove("finished")
+				hi.stop()
+			}
+		});
+	</script>
+</body>
+
 </html>
